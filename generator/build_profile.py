@@ -16,12 +16,12 @@ LINE_H = 17.5
 PAD_X, PAD_Y = 24, 26
 FONT = "Menlo, 'DejaVu Sans Mono', 'Liberation Mono', 'Courier New', monospace"
 
-DARK = dict(bg="#0d1117", border="#30363d", art="#8b949e",
-            key="#ff7b72", dots="#484f58", val="#79c0ff",
-            header="#ffa657", rule="#3d444d", section="#7ee787", plain="#c9d1d9")
-LIGHT = dict(bg="#ffffff", border="#d0d7de", art="#57606a",
-             key="#cf222e", dots="#d0d7de", val="#0969da",
-             header="#bc4c00", rule="#d0d7de", section="#1a7f37", plain="#1f2328")
+DARK = dict(bg="#0d1117", border="#1b3a5c", art="#7aa5cc",
+            key="#58a6ff", dots="#274158", val="#a5d6ff",
+            header="#79c0ff", rule="#1f3a5c", section="#58a6ff", plain="#c9d1d9")
+LIGHT = dict(bg="#ffffff", border="#a8c7e8", art="#4a7bab",
+             key="#0969da", dots="#b6d0ea", val="#0a3069",
+             header="#0550ae", rule="#b6d0ea", section="#0969da", plain="#1f2328")
 
 # (label, value) -> ". label: ..dots.. value"
 def kv(label, value):
@@ -43,9 +43,10 @@ PANEL = [
     kv("OS", "macOS, Windows, Linux"),
     kv("Host", "The University of Texas at Dallas"),
     kv("Kernel", "B.S. Computer Science, Dec 2026"),
-    kv("Shell", "SWE Intern @ Microsoft (Excel, Power BI)"),
+    kv("Shell", "SWE Intern @ Microsoft"),
     kv("Shell.History", "Goldman Sachs, Bell Textron"),
     kv("IDE", "VS Code, Visual Studio, Xcode"),
+    kv("Hobbies", "Videography, Dance, Baking"),
     blank(),
     section("Skills"),
     kv("Languages", "Java, C++, Python, C#, TypeScript"),
@@ -55,14 +56,13 @@ PANEL = [
     kv("Tools", "Git, Docker, Kubernetes, Figma"),
     blank(),
     section("Leadership"),
-    kv("President", "ACM @ UT Dallas — 800+ members"),
-    kv("Events", "HackUTD, 50+ campus events / year"),
+    kv("President", "ACM @ UT Dallas [200+ Officers]"),
+    kv("Vice President of Membership", "AKPsi Mu Rho Chapter"),
     blank(),
     section("Contact"),
     kv("Email", "hello@elijahwalker.me"),
     kv("Web", "elijahwalker.me"),
     kv("LinkedIn", "in/elijahtruthwalker"),
-    kv("GitHub", "elijahtwalker"),
 ]
 
 def build(theme, colors, invert):
